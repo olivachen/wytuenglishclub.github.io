@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+
+
+/* Center the content in the browser window */
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    min-height: 80vh;
+    width: 30rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.cover{
+    min-height: 35vh;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover img{
+    width: 20rem;
+    z-index: 2;
+}
+
+.info h3{
+    font-size: 1rem;
+    padding: 1rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+}
+
+.info p{
+    font-size: .5rem;
+    padding: .25rem .25rem;
+    color: #585858;
+    font-weight: lighter;
+}
+
+p.clear {
+  clear: both;
+}
+
+.namebox {
+  text-align: center;
+}
+
+a:link { 
+  color: #004AAD;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited { 
+  color: #585858;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sizes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sizes button {
+  padding: 15px 20px;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: #585858;
+}
+
+.joinus{
+    margin-top: 5rem;
+}
+
+.joinus button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #004AAD;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.polaroid {
+  width: 20%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5px;
+  float: left;
+  padding: 5px;
+}
